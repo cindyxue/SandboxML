@@ -12,4 +12,6 @@ with zipfile.ZipFile(path_to_zip_file, 'r') as zip_ref:
             md5 = os.path.splitext(fileName)[0]
             oldName = directory_to_extract_to + '/' + fileName
             newName = directory_to_extract_to + '/' + md5 + '.json'
+            print("old: " + oldName)
+            print("new: " + newName)
             os.rename(oldName, newName) 
