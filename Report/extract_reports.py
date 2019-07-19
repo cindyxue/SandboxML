@@ -25,12 +25,13 @@ def main():
 
     for item in os.listdir(folder):
         if item.endswith(extension):
-            extractReport(folder, item, targetFolder)
-            # try:
-            #     extractReport(folder, item, targetFolder)
-            # except Exception as e:
-            #     print(item)
-            #     print(e)
+            print(item)
+            try:
+                extractReport(folder, item, targetFolder)
+                print(item)
+            except Exception as e:
+                print(item)
+                print(e)
 
 
 # Driver Code 
