@@ -25,7 +25,7 @@ def main():
         if item.endswith(extension):
             try:
                 extractReport(folder, item, targetFolder)
-            except:
+            except Exception as e:
                 print(item)
                 print(e)
 
