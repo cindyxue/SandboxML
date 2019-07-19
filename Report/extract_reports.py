@@ -14,7 +14,7 @@ def extractReport(path_to_zip_file, zip_file_name, directory_to_extract_to):
                 os.rename(oldName, newName) 
 
 def main(): 
-    folder = '/data/sandbox/Report_Dir/14/pe32'
+    folder = '/data/sandbox/Report_Dir/14/pe32/'
     targetFolder = '/data/sandbox/cuckoo_reports'
     extension = ".zip"
 
