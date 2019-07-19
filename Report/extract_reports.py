@@ -11,13 +11,13 @@ def extractReport(path_to_zip_file, zip_file_name, directory_to_extract_to):
                 # md5 = 'fe04c0fc835669bc27e75db4bebfa696'
                 oldName = directory_to_extract_to + fileName
                 newName = directory_to_extract_to + md5 + '.json'
-                print(oldName)
-                print(newName)
+                # print(oldName)
+                # print(newName)
                 os.rename(oldName, newName) 
 
 def main(): 
     folder = '/data/sandbox/Report_Dir/14/pe32/'
-    targetFolder = '/data/sandbox/cuckoo_reports'
+    targetFolder = '/data/sandbox/cuckoo_reports/'
     extension = ".zip"
 
     if not os.path.exists(targetFolder):
