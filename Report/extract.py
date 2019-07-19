@@ -9,3 +9,7 @@ with zipfile.ZipFile(path_to_zip_file, 'r') as zip_ref:
     for fileName in listOfFileNames:
         if fileName.endswith('.json'):
             zip_ref.extract(fileName, directory_to_extract_to)
+            md5 = os.path.splitext(base)[0]
+            oldName = directory_to_extract_to + '/' + fileName
+            newName = directory_to_extract_to + '/' + md5 + '.json'
+            os.rename(oldName, newName) 
