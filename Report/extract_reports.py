@@ -11,8 +11,6 @@ def extractReport(path_to_zip_file, zip_file_name, directory_to_extract_to):
                 # md5 = 'fe04c0fc835669bc27e75db4bebfa696'
                 oldName = directory_to_extract_to + fileName
                 newName = directory_to_extract_to + md5 + '.json'
-                # print("old: " + oldName)
-                # print("new: " + newName)
                 os.rename(oldName, newName) 
 
 def main(): 
