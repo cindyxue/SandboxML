@@ -12,5 +12,5 @@ for item in os.listdir(folder):
         break
     cur = folder + item
     print(cur)
-    copyfile(cur, targetFolder)
+    copyfile(cur, targetFolder + item)
     i += 1
