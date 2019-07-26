@@ -18,5 +18,5 @@ for item in os.listdir(folder):
             os.makedirs(targetFolder + f)
     cur = folder + item
     print(targetFolder + f + item)
-    # copyfile(cur, targetFolder + f + item)
+    copyfile(cur, targetFolder + f + item)
     i += 1
