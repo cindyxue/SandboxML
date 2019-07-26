@@ -16,5 +16,5 @@ for item in os.listdir(folder):
         i = 0
     cur = folder + item
     print(targetFolder + f + item)
-    # copyfile(cur, targetFolder + f + item)
+    copyfile(cur, targetFolder + f + item)
     i += 1
