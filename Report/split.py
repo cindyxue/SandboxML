@@ -15,6 +15,6 @@ for item in os.listdir(folder):
         f = 'black_' + str(cnt) + '/'
         i = 0
     cur = folder + item
-    print(cur)
+    print(targetFolder + f + item)
     # copyfile(cur, targetFolder + f + item)
     i += 1
