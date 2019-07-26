@@ -1,7 +1,7 @@
 import os
 from shutil import copyfile
 
-folder = '/data/sandbox/cuckoo_reports/'
+folder = '/data/sandbox/sandbox_black_report/'
 targetFolder = '/home/cindy/cuckooml/sample_data/'
 f = 'black_1/'
 if not os.path.exists(targetFolder):
